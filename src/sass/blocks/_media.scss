@@ -72,7 +72,13 @@
     }
     .advantages {
         &__wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             margin-top: 40px;
+        }
+        &__item {
+            max-width: 220px;
         }
         &__subtitle {
             margin-top: 25px;
@@ -82,6 +88,9 @@
             margin-top: 20px;
             font-size: 13px;
         }        
+    }
+    .carousel {
+        
     }
 }
 
@@ -102,7 +111,7 @@
         padding: 25px 0 50px 0;
         &__link {
             margin-top: 14px;
-            font-size: 14px;
+            font-size: 11px;
         }
     }
     .title {
@@ -113,6 +122,10 @@
     }
     .advantages {
         &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
             margin-top: 45px;
         }
         &__item {
@@ -185,5 +198,26 @@
             margin-top: 14px;
             margin-bottom: 15px;
         }
+    }
+    .consultation {
+       .title {
+        font-size: 15px;
+        text-align: left;
+       }
+       &__desc {
+        font-size: 13px;
+       }
+       .feed-form {
+        width: 255px;
+        
+        input {
+            font-size: 13px;
+            height: 45px;
+        }
+        .button {
+            height: 45px;
+            font-size: 13px;
+        }
+       }
     }
 }
