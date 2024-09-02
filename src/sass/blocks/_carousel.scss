@@ -4,6 +4,11 @@
         position: relative;
         width: 750px;
         margin: 0 auto;
+        img {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+        }
     }
     .slick-prev, .slick-next {
         position: absolute;
@@ -17,5 +22,47 @@
         right: -66px;
         left: auto;
     }
+
+        /* Изменение стиля контейнера с точками */
+    .slick-dots {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center; /* Центрирует точки по горизонтали */
+        align-items: center; /* Выравнивает точки по вертикали */
+    }
+
+    /* Изменение стиля каждой точки */
+    .slick-dots li {
+        display: inline-block; /* Выводим точки в одну строку */
+        margin: 0 5px; /* Добавляем отступы между точками */
+    }
+
+    /* Стили для кнопок внутри точек */
+    .slick-dots li button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%; /* Делаем точки круглыми */
+        background-color: #ccc; /* Цвет обычной точки */
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        transition: background-color 0.3s ease;
+        text-indent: -9999px; /* Убираем текст */
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Стили для активной точки */
+    .slick-dots li.slick-active button {
+        background-color: $main_color; /* Цвет активной точки */
+    }
+
+    /* Добавление эффекта при наведении на точку */
+    .slick-dots li button:hover {
+        background-color: $main_color; /* Цвет при наведении */
+    }
+
     
 }

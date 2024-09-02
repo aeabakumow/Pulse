@@ -89,14 +89,13 @@
             font-size: 13px;
         }        
     }
-    .carousel {
-        
-    }
+    
 }
 
 @media (max-width:767px) {
     .container {
         max-width: 520px;
+        overflow-x: hidden;
     }
     .header {
         &__logo {
@@ -140,11 +139,13 @@
             font-size: 10px;
         }
     }
+    
 }
 
 @media (max-width: 575px) {
     .container {
         max-width: 280px;
+        overflow-x: hidden;
     }
     .header {
         flex-direction: column;
@@ -219,5 +220,44 @@
             font-size: 13px;
         }
        }
+    }
+    .carousel {
+        &__inner {
+           img {
+            display: block;
+            width: 35%;
+            margin: 0;
+           }
+        }
+        .slick-dots {
+            justify-content: flex-start;
+            margin-top: 30px; 
+            padding-left: 110px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            li:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &__tab {
+            padding-top: 15px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+    .feed {
+        &__item {
+            flex-direction: column;
+        }
+        &__text {
+            margin-left: 0px;
+            padding-right: 0px; 
+        }
+        &__subtitle {
+            margin-top: 40px;
+        }
     }
 }

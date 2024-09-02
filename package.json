@@ -19,7 +19,7 @@
         "bootstrap": "^5.3.3"
     },
     "browserslist": [
-  "last 2 versions",
-  "maintained node versions"
-]
+        "last 2 versions",
+        "maintained node versions"
+    ]
 }
