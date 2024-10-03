@@ -110,7 +110,8 @@
             </div>
             <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
+                <!-- из телефона убираем type="number" иначе не будет работать маска-->
                 <input name="email" required placeholder="Ваш E-mail" type="email">
 
                 <!-- <input type="submit" value="заказать кОНСУЛЬТАЦИЮ"> -->
@@ -542,7 +543,8 @@
             </div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" placeholder="Ваше имя" type="text">
-                <input name="phone" placeholder="Ваш телефон" type="number">
+                <input name="phone" placeholder="Ваш телефон">
+                <!-- из телефона убираем type="number" иначе не будет работать маска-->
                 <input name="email" placeholder="Ваш E-mail" type="email">
 
                 <!-- <input type="submit" value="заказать кОНСУЛЬТАЦИЮ"> -->
@@ -560,7 +562,8 @@
             </div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" equired placeholder="Ваш телефон" type="number">
+                <input name="phone" equired placeholder="Ваш телефон">
+                <!-- из телефона убираем type="number" иначе не будет работать маска-->
                 <input name="email" required placeholder="Ваш E-mail" type="email">
 
                 <!-- <input type="submit" value="заказать кОНСУЛЬТАЦИЮ"> -->
@@ -583,6 +586,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
